@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Login</title>
+{% endblock %}
+
+{% block body %}
+    <section id="login-section">
+        <div class="login-box ">
+            <h1>Login</h1>
+            <div class="row">
+                <div class="col-6">
+                    <a href="{% url 'home' %}">
+                        <img class="login-brand" src="{% static 'images/brand.png' %}">
+                    </a>
+                </div>
+                <div class="col-6">
+                    <div class="login-form">
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                {{ form.username }}
+                                <!--<input type="text" class="form-control" placeholder="User Name" id="username"> -->
+                            </div>
+                            <div class="form-group">
+                                {{ form.password }}
+                                <!--<input type="password" class="form-control" id="password" placeholder="Password">-->
+                            </div>
+                            <input type="submit" class="btn btn-primary login-btn" value="Login">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="register">
+                        <hr>
+                        <p>Don't have an account? <a href="{% url 'register' %}" class="sign-in">Sign Up.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

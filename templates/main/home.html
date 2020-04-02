@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% block title %}
+    <title>RentIn</title>
+{% endblock %}
+
+{% block body %}
+
+    {% include 'main/hero.html' %}
+    <!-- Division -->
+    <section id="division">
+        <div class="container">
+            <a href="#" class="btn-div animated fadeInUp">Dhaka</a>
+            <a href="#" class="btn-div animated fadeInUp">Chattogram</a>
+            <a href="#" class="btn-div animated fadeInUp">Sylhet</a>
+            <a href="#" class="btn-div animated fadeInUp">Khulna</a>
+            <a href="#" class="btn-div animated fadeInUp">Barishal</a>
+            <a href="#" class="btn-div animated fadeInUp">Rajshahi</a>
+            <a href="#" class="btn-div animated fadeInUp">Rangpur</a>
+            <a href="#" class="btn-div animated fadeInUp">Mymensingh</a>
+        </div>
+    </section>
+    <!-- End Division -->
+
+    <!-- TOP CATEGORIES -->
+    <section id="top-categories">
+        <h1 class="cat-head">OUR TOP CATEGORIES</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="cat-items">
+                        <a href="#">
+                            <p class="cat-p">Vehicles</p>
+                            <img class="cat-images" src="{% static 'images/vehicles.jpg' %}">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="cat-items">
+                        <a href="#">
+                            <p class="cat-p">Property</p>
+                            <img class="cat-images" src="{% static 'images/property.jpg' %}">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="cat-items">
+                        <a href="#">
+                            <p class="cat-p">Services</p>
+                            <img class="cat-images" src="{% static 'images/service.jpg' %}">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="cat-items">
+                        <a href="#">
+                            <p class="cat-p">Education</p>
+                            <img class="cat-images" src="{% static 'images/education.jpg' %}">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End TOP CATEGORIES -->
+
+    <!-- Rent Something -->
+    <section id="rent-something">
+        <div class="container">
+            <h1>Do you have something to rent ?</h1>
+            <h5>Post your ad on Rentin.com</h5>
+            <a class="nav-link" href="#">
+                <button type="button" class="btn btn-default my-btn" href="" style="color: white;">POST A RENT</button>
+            </a>
+        </div>
+    </section>
+    <!-- End Rent Something -->
+
+    <!-- Safety hint -->
+    <section id="safety-hint">
+        <div class="container">
+            <div class="safety-div">
+                <img class="safety-img" src="{% static 'images/sheild.png' %}">
+                <div>
+                    <h2>Stay safe while trading!</h2>
+                    <p>All ads are manually reviewed by our team for your safety. Read our tips on how to make safe rents. We encourage on safety first.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Safety hint -->
+
+{% endblock %}

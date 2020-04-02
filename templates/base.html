@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/icofont/icofont.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animate.css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        {% block title %}
+            <title></title>
+        {% endblock %}
+    </head>
+    <body>
+        <!-- Navbar Start -->
+        <header id="header">
+            <div class="container d-flex">
+                <div class="logo mr-auto">
+                    <a href="{% url 'home' %}"><img src="{% static 'images/brand.png' %}" alt=""></a>
+                </div>
+
+                <nav class="nav-menu d-none d-lg-block">
+                    <ul>
+                        <li> <a href="{% url 'home' %}">Home</a> </li>
+                        <li> <a href="#">About us</a> </li>
+                        {% if user.is_authenticated %}
+                            <li> <a href="#">Profile @{{ user.username }} </a> </li>
+                            <li> <a href="{% url 'logout' %}">Logout</a> </li>
+                        {% else %}
+                            <li> <a href="{% url 'login' %}">Log In</a> </li>
+                            <li> <a href="{% url 'register' %}">Register</a> </li>
+                        {% endif %}
+
+                    </ul>
+                </nav><!-- .nav-menu -->
+
+            </div>
+        </header>
+        <!-- Navbar End -->
+        {% block body %}
+        
+        {% endblock %}
+        <!-- Footer Start -->
+        <footer id="footer">
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Rentin</span></strong>. All Rights Reserved
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
