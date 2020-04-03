@@ -1,5 +1,4 @@
 body {
-  font-family: "Open Sans", sans-serif;
   color: #444444;
 }
 
@@ -10,10 +9,6 @@ a {
 a:hover {
   color: #e6573f;
   text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -620,7 +615,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 
 #register-section{
-  height: 550px;
+  height: 700px;
   margin: 40px;
   padding: 10px;
   background-color: white;
@@ -630,7 +625,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  height: 530px;
+  height: 660px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -662,3 +657,52 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   text-decoration: underline;
 }
+
+
+/*--------------------------------------------------------------
+# logout
+--------------------------------------------------------------*/
+#logout-section{
+  height: 180px;
+  margin: 40px;
+  padding: 10px;
+  background-color: white;
+}
+
+#logout-section .box{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#logout-section .box h2, p{
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# profile
+--------------------------------------------------------------*/
+#profile{
+  margin: 30px auto;
+}
+#profile .content-section {
+  background: #ffffff;
+  padding: 20px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+#profile .content-section h2{
+  font-family: "Raleway", sans-serif;
+}
+#profile .account-img {
+  height: 150px;
+  width: 150px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+

@@ -5,10 +5,15 @@
 {% endblock %}
 
 {% block body %}
-    <h2>You have been logged out</h2>
-    <div class="border-top pt-3">
-        <small class="text-muted">
-             <a class="ml-2" href="{% url 'login' %}">Log in again</a>
-        </small>
-    </div>
+    <section id="logout-section">
+        <div class="container box">
+            <h2>You have been logged out</h2>
+                <div class="border-top pt-3">
+                    <p>
+                         <a class="btn btn-danger" href="{% url 'login' %}">Log in again</a>
+                    </p>
+                </div>
+        </div>
+    </section>
+
 {% endblock %}
