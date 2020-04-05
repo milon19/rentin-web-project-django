@@ -706,3 +706,131 @@ a:hover {
 }
 
 
+/*--------------------------------------------------------------
+# Products List
+--------------------------------------------------------------*/
+#product-list{
+  position: relative;
+  margin: 30px auto;
+  min-height: 600px;
+}
+
+#product-list .topbar-container{
+  border-bottom: 2px solid white;
+  width: 100%;
+  padding: 9px;
+  border-radius: 4px;
+  background-color: #f3f6f5;
+}
+
+#product-list .topbar-container .first-col{
+  margin: auto 0 auto 0;
+  padding: 0;
+}
+#product-list .topbar-container .first-col p{
+  font-size: 18px;
+  margin: 0;
+  color: black;
+  font-weight: bolder;
+}
+
+#product-list .topbar-container .mid-col{
+  margin: auto 0 auto 0;
+  padding: 0;
+}
+#product-list .topbar-container .mid-col p{
+  font-size: 18px;
+  margin: 0;
+  color: black;
+  font-weight: bolder;
+}
+#product-list .topbar-container .last-col{
+  margin: auto 0 auto 0;
+  padding: 0;
+}
+#product-list .topbar-container .last-col .btn-search{
+  margin-left: 10px;
+}
+#product-list .sidebar{
+  border-right: 2px solid white;
+  width: 100%;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #f3f6f5;
+}
+#product-list .sidebar p{
+  text-align: left;
+  color: black;
+}
+
+#product-list .main-list{
+  width: 100%;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #f3f6f5;
+  justify-content: center;
+}
+
+#product-list .icon-box {
+  padding: 15px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+}
+
+#product-list .icon-box .img-box {
+  height: 200px;
+  width: 240px;
+  border-radius: 5px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+#product-list .icon-box .img-box img{
+  height: 200px;
+  width: 240px;
+  border-radius: 5px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+#product-list .icon-box h3{
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+#product-list .icon-box p{
+  margin-bottom: 20px;
+  font-size: 40px;
+  margin-left: 10px;
+}
+#product-list .icon-box h2{
+  margin-top: 30px;
+  font-size: 25px;
+  margin-left: 10px;
+  color: #00ACC2;
+}
+#product-list .icon-box h3 a {
+  color: black;
+  transition: 0.3s;
+}
+
+#product-list .icon-box p {
+  color: gray;
+  text-align: left;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+#product-list .icon-box:hover {
+  background: rgba(223, 223, 255, 0.6);
+}
+
+#product-list .icon-box:hover i, .icon-box:hover h3 a, .icon-box:hover p {
+  color: #fff;
+}

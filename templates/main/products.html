@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Available Products for Rent.</title>
+{% endblock %}
+
+{% block body %}
+    <section id="product-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 topbar-container">
+                    <div class="topbar-row">
+                        <div class="row">
+                            <div class="col first-col">
+                                <p>Select Your Location</p>
+                            </div>
+                            <div class="col mid-col">
+                                <p>Select Your Category</p>
+                            </div>
+                            <div class="col last-col">
+                                <form action="">
+                                    <div class="form-inline">
+                                        <input type="text" class="form-control" placeholder="What do you need?">
+                                        <input type="submit" class="btn btn-secondary btn-search" value="Search">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 sidebar">
+                    <p style="font-size: 11px; color:#999d9e">Category</p>
+                    <leged>All Categories</leged>
+                    <ul>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Option 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Option 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Option 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Option 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="">Option 2
+                            </label>
+                        </div>
+                    </ul>
+                    <br>
+                    <p style="font-size: 11px; color:#999d9e">Location</p>
+                    <leged>All Location</leged>
+                    <ul>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Option 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Option 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Option 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Option 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Option 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Option 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Option 2
+                            </label>
+                        </div>
+
+                    </ul>
+
+                </div>
+                <div class="col-md-8 main-list">
+
+                    <div class="icon-box" onclick="location.href='#';" style="cursor: pointer;">
+                        <div class="img-box">
+                            <img src="{% static 'images/1.jpg' %}">
+                        </div>
+                        <div>
+                            <h3><a href="">Hiache Family Car - Best choice for your tour</a></h3>
+                            <p>Moghbajar, Dhaka</p>
+                            <h2>Price: TK. 3299/Day</h2>
+                        </div>
+                    </div>
+
+                    <div class="icon-box" onclick="location.href='#';" style="cursor: pointer;">
+                        <div class="img-box">
+                            <img src="{% static 'images/1.jpg' %}">
+                        </div>
+                        <div>
+                            <h3><a href="">Hiache Family Car - Best choice for your tour</a></h3>
+                            <p>Moghbajar, Dhaka</p>
+                            <h2>Price: TK. 3299/Day</h2>
+                        </div>
+                    </div>
+
+                    <div class="icon-box" onclick="location.href='#';" style="cursor: pointer;">
+                        <div class="img-box">
+                            <img src="{% static 'images/1.jpg' %}">
+                        </div>
+                        <div>
+                            <h3><a href="">Hiache Family Car - Best choice for your tour</a></h3>
+                            <p>Moghbajar, Dhaka</p>
+                            <h2>Price: TK. 3299/Day</h2>
+                        </div>
+                    </div>
+
+                    <div class="icon-box" onclick="location.href='#';" style="cursor: pointer;">
+                        <div class="img-box">
+                            <img src="{% static 'images/1.jpg' %}">
+                        </div>
+                        <div>
+                            <h3><a href="">Hiache Family Car - Best choice for your tour</a></h3>
+                            <p>Moghbajar, Dhaka</p>
+                            <h2>Price: TK. 3299/Day</h2>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+    </section>
+{% endblock %}
